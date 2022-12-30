@@ -1,0 +1,908 @@
+relationship type   edsPerson2CheckedBasketObject 
+    fromtype = Person
+    totype = all
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsProject 
+    fromtype = all
+    totype = PnOProject
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsDocument2VerificationReport 
+    fromtype = edsDocumentSet
+    totype = edsVerificationReport
+    fromcardinality = One
+    tocardinality = One
+relationship type   edsDocumentListTree 
+    fromtype = edsDocumentListStructure
+    totype = edsDocumentListStructure
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsSPFTagClass2SPFForm 
+    fromtype = edmClass
+    totype = edsSPFForm
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsSPFDisplay2SPFPropertyDef 
+    fromtype = edsSPFDisplay
+    totype = edmAttribute
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsSPFSection2SPFDisplay 
+    fromtype = edmAttributeGroup
+    totype = edsSPFDisplay
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsEngineering2CI 
+    fromtype = edsDocumentEngineering
+    totype = edsTag
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsCI2CI_2DocSet 
+    totype = edsDocumentSet
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsPackage2DocumentListItem 
+    fromtype = edsDocPackage
+    totype = edsDocumentListItem
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsPackage2DocumentSet 
+    fromtype = edsDocPackage
+    totype = edsDocumentSet
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsPBSFunctionalArea 
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsPBS 
+    fromtype = edsPBSUnit
+    totype = edsMockup
+    totype = edsPBSFunctionalArea
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsDocumentSet 
+    fromtype = edsDocumentSet
+    totype = edsDocumentSet
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsCommentList 
+    fromtype = edsDocumentSet
+    totype = edsCommentList
+    totype = edsCompCheckList
+    totype = edsCommResRecord
+    fromcardinality = One
+    tocardinality = N
+relationship type   edsLetterReply 
+    fromtype = edsLetter
+    totype = edsLetter
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsDocumentEngineering 
+    fromtype = edsDocumentSet
+    totype = edsDocumentEngineering
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsLetterContent 
+    fromtype = edsLetter
+    totype = edsDocumentEngineering
+    totype = edsLetter
+    totype = edsCommentList
+    totype = edsCompCheckList
+    totype = edsCommResRecord
+    totype = edsDocumentSet
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsEvent 
+    fromtype = all
+    totype = edsEvent
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsLevel 
+    fromtype = edsLevel
+    totype = edsLevel
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsRequirementChapter 
+    fromtype = edsRequirementChapter
+    totype = edsRequirementChapter
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsDocumentListItem2DocumentSet 
+    fromtype = edsDocumentListItemEngineering
+    fromtype = edsDocumentListItem
+    totype = edsDocumentEngineering
+    totype = edsDocumentSet
+    fromcardinality = One
+    tocardinality = N
+relationship type   edsDefCI2Doc 
+    fromtype = edsMockup
+    fromtype = edsPBSFunctionalArea
+    fromtype = edsTag
+    totype = edsDocumentSet
+    totype = Impact Analysis
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsMatrixPath 
+    fromtype = edsMatrixPath
+    totype = edsMatrixPath
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsClass2TagInfo 
+    fromtype = edmClass
+    totype = edsTag
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsPBSUnit_EDB 
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsListDoc 
+    fromtype = edsListDoc
+    totype = edsListDoc
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsRMReq2ProjectStage 
+    fromtype = edsRequirement
+    totype = edmReferenceItemBase
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsRMReq2Level 
+    fromtype = edsRequirement
+    totype = edmReferenceItemBase
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsTag 
+    fromtype = all
+    totype = edsTag
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsRequirement 
+    fromtype = edsRequirement
+    totype = edsRequirement
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsMatrix2ContentFrom 
+    fromtype = all
+    totype = all
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsMatrix2ContentTo 
+    fromtype = all
+    totype = all
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsRMReqRespDep 
+    fromtype = edsRequirement
+    totype = Department
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsPlanReq2ListDocument 
+    fromtype = edsRequirement
+    totype = all
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsPlanReq2PBS 
+    fromtype = edsRequirement
+    totype = all
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsProjectStage 
+    fromtype = edsProjectStage
+    totype = edsProjectStage
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsLevels 
+    fromtype = all
+    totype = edmReferenceItemBase
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsDocumentListStructureTree 
+    fromtype = all
+    totype = all
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsDocumentListEngineering 
+    fromtype = edsDocumentListItemEngineering
+    totype = edsDocumentListItemEngineering
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsProjectDocumentList 
+    fromtype = edsProjectDocumentList
+    totype = edsProjectDocumentList
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsDocumentListItem2Level 
+    fromtype = all
+    totype = all
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsRM_AssignResp 
+    fromtype = all
+    totype = all
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsRM_ReqRespOrg 
+    fromtype = all
+    totype = all
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsDocumentListItem2ProjectStage 
+    fromtype = all
+    totype = all
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsDocumentListItem2PBS 
+    fromtype = all
+    totype = all
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsFunctionalUnit 
+    fromtype = all
+    totype = all
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsSPFForm2SPFSection 
+    fromtype = edsSPFForm
+    totype = edmAttributeGroup
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsSPFOriginator 
+    fromtype = edmReferenceItemBase
+    totype = edsTag
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsPath2Matrix 
+    fromtype = all
+    totype = all
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsPBSUnit 
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsRMReassignPropose 
+    fromtype = edsRequirement
+    totype = Company
+    totype = Business Unit
+    totype = Department
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsRequirementNTD 
+    fromtype = edsRequirementNTD
+    totype = edsRequirementNTD
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsParenCI2ChildCI 
+    fromtype = edmReferenceItemBase
+    fromtype = IMS_PBSSystem
+    fromtype = edsTag
+    totype = edmReferenceItemBase
+    totype = IMS_PBSSystem
+    totype = edsTag
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsDocumentListItemEngineering2DocumentEngineering 
+    fromtype = edsDocumentListItemEngineering
+    totype = edsDocumentEngineering
+    fromcardinality = One
+    tocardinality = N
+relationship type   edsMatrix 
+    fromtype = edsMatrix
+    totype = edsMatrix
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsRequirementStructure 
+    fromtype = edsRequirementStructure
+    totype = edsRequirementStructure
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsRequirementTree 
+    fromtype = edsRequirementStructure
+    fromtype = edsRequirementChapter
+    totype = edsRequirementChapter
+    totype = edsRequirement
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsProjectStages 
+    fromtype = all
+    totype = edmReferenceItemBase
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsCI2CI 
+    fromtype = edsGBSBuilding
+    fromtype = edsTag
+    fromtype = edsGBSRoom
+    fromtype = edsPBSSystem
+    totype = edsGBSBuilding
+    totype = edsTag
+    totype = edsGBSRoom
+    totype = edsPBSSystem
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsExternalSoftware 
+    fromtype = edsExternalSoftware
+    totype = all
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsSupersededPBS 
+    fromtype = edsPBSFunctionalArea
+    totype = edsPBSFunctionalArea
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsRMReqRespOrg 
+    fromtype = edsRequirement
+    totype = Company
+    totype = Business Unit
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsRMAssignResp 
+    fromtype = edsPBSFunctionalArea
+    fromtype = edsRequirement
+    totype = Person
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsDocumentListItem2EquipmentClassification 
+    fromtype = all
+    totype = edsEquipmentClassification
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsRMReq2Comment 
+    fromtype = edsRequirement
+    totype = edsComment
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsRMReviewer 
+    fromtype = edsRequirement
+    totype = Department
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsFactReq2Doc 
+    fromtype = edsRequirement
+    totype = edsDocumentEngineering
+    totype = edsDocumentSet
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsPlanReq2DocumentListStructure 
+    fromtype = edsRequirement
+    totype = edsDocumentListStructure
+    totype = edsDocumentListItem
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsReq2Equipment 
+    fromtype = edsRequirement
+    totype = edsEquipmentClassification
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsExcludedRequirement2DocumentItem 
+    fromtype = edsRequirementNTD
+    fromtype = edsRequirementEPC
+    totype = edsDocumentListItemEngineering
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsBaseline2PBS 
+    fromtype = all
+    totype = all
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsBaseline 
+    fromtype = edsBaseline
+    totype = edsBaseline
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsRefCI2Doc 
+    fromtype = edsGBSBuilding
+    fromtype = edsTag
+    fromtype = edsGBSRoom
+    fromtype = edsPBSSystem
+    totype = edsDocumentSet
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsDocumentSet2Document 
+    fromtype = edsDocumentSet
+    totype = edsDocument
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsReferenceLetter 
+    fromtype = edsLetter
+    totype = edsEvent
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsMatrixPathGroup2Group 
+    fromtype = edsMatrixPathGroup
+    totype = edsMatrixPathGroup
+    fromcardinality = One
+    tocardinality = N
+relationship type   edsMatrixPathGroup2Path 
+    fromtype = edsMatrixPathGroup
+    totype = edsMatrixPath
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsPBS2Level 
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsSRMReq2Company 
+    fromtype = edsRequirement
+    totype = Company
+    totype = Business Unit
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsSRMReq2Company2ProjectStage 
+    totype = edmReferenceItemBase
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsSRMCompany2Project 
+    fromtype = Company
+    fromtype = Business Unit
+    totype = PnOProject
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsSRMCompany2Project2OrgRole 
+    totype = edsSRMOrgRole
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsSRMCompany2Project2OrgRole2ProjectStage 
+    totype = edmReferenceItemBase
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsEventReplicate 
+    fromtype = all
+    totype = edsEvent
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsRequirementNSC 
+    fromtype = edsRequirementNSC
+    totype = edsRequirementNSC
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsRequirementDetailedNSC 
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsIA2ProposedCB 
+    fromtype = edsMockup
+    fromtype = IMS_ImpactAnalysis
+    totype = edsBaseline
+    fromcardinality = N
+    tocardinality = One
+relationship type   edsIA2SupersededPBS 
+    fromtype = IMS_ImpactAnalysis
+    totype = edsPBSFunctionalArea
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsSubImpactAnalysis 
+    fromtype = IMS_ImpactAnalysis
+    totype = IMS_ImpactAnalysis
+    fromcardinality = One
+    tocardinality = N
+relationship type   edsRMDep2Project 
+    fromtype = Department
+    totype = PnOProject
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsRMPerson2Project 
+    fromtype = Person
+    totype = PnOProject
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsMatrix2Project 
+    fromtype = edsMatrixPathGroup
+    totype = PnOProject
+    fromcardinality = One
+    tocardinality = N
+relationship type   edsPBS2Building 
+    fromtype = edsPBSFunctionalArea
+    totype = edsGBSBuilding
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsFactReq2Doc
+    fromtype = edsRequirement
+    totype = edsDocumentEngineering
+    totype = edsDocumentSet
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsPDTK2Doc 
+    fromtype = edsPDTK
+    totype = edsDocumentEngineering
+    totype = edsDocumentSet
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsChMFormRelevanceAnalysis2ChMObject 
+    fromtype = edsChMFormRelevanceAnalysis
+    totype = Change Request
+    totype = IMS_CIEF
+    totype = IMS_DIEF
+    fromcardinality = One
+    tocardinality = N
+relationship type   edsCommentGGE 
+    fromtype = edsCommentListChapterGGE
+    fromtype = edsCommentListGGE
+    totype = edsCommentGGE
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsCommentGGE2Comment 
+    fromtype = edsCommentGGE
+    totype = edmComment
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsCommentListGGEStructure 
+    fromtype = edsCommentListChapterGGE
+    fromtype = edsCommentListGGE
+    totype = edsCommentListChapterGGE
+    fromcardinality = N
+    tocardinality = N
+relationship type   edsChMFormRelevanceAnalysis2Catalog 
+    fromtype = edsChMFormRelevanceAnalysis
+    totype = edsChMFormRelevanceAnalysisCatalog
+    fromcardinality = N
+    tocardinality = One
+relationship type   edsGroup2Code 
+    fromtype = Group
+    totype = edsCode
+    fromcardinality = N
+    tocardinality = N
+relationship type   IMS_DEPResult2QPResult 
+    fromcardinality = N
+    tocardinality = N
+relationship type   IMS_Object2ExternalSystem 
+    fromtype = all
+    totype = IMS_ExternalSystem
+    fromcardinality = N
+    tocardinality = N
+relationship type   IMS_PBS2DEP 
+    fromtype = edsGBSBuilding
+    fromtype = IMS_PBSFunctionalArea
+    fromtype = IMS_PBSSystem
+    fromcardinality = N
+    tocardinality = One
+relationship type   IMS_PBS2Owner 
+    fromtype = edsGBSBuilding
+    fromtype = IMS_PBSFunctionalArea
+    fromtype = IMS_PBSSystem
+    totype = Person
+    fromcardinality = N
+    tocardinality = N
+relationship type   IMS_PBSFunctionalArea2IMS_GBSBuilding 
+    fromtype = IMS_PBSFunctionalArea
+    totype = edsGBSBuilding
+    fromcardinality = N
+    tocardinality = N
+relationship type   IMS_PBSFunctionalArea2IMS_PBSSystem 
+    fromtype = IMS_PBSFunctionalArea
+    totype = IMS_PBSSystem
+    fromcardinality = N
+    tocardinality = N
+relationship type   IMS_ProjectStage2CB 
+    fromtype = IMS_ProjectStage
+    totype = IMS_Baseline
+    fromcardinality = N
+    tocardinality = N
+relationship type   IMS_CIEF2ChangeOwner 
+    fromtype = IMS_CIEF
+    totype = Person
+    fromcardinality = N
+    tocardinality = One
+relationship type   IMS_CIEF2Company 
+    fromtype = IMS_CIEF
+    totype = Company
+    fromcardinality = N
+    tocardinality = One
+relationship type   IMS_CIEF2DIEF 
+    fromtype = IMS_CIEF
+    totype = IMS_DIEF
+    fromcardinality = One
+    tocardinality = N
+relationship type   IMS_CO2ChangeOwner 
+    fromtype = IMS_ChangeOrder
+    totype = Person
+    fromcardinality = N
+    tocardinality = One
+relationship type   IMS_CO2FilesStore 
+    fromtype = IMS_ChangeOrder
+    totype = IMS_CO_Files
+    fromcardinality = One
+    tocardinality = One
+relationship type   IMS_CRF 
+    fromtype = IMS_ChangeRequest
+    totype = IMS_CRF
+    fromcardinality = One
+    tocardinality = One
+relationship type   IMS_CRF2AffectedItem 
+    fromtype = Change Request
+    totype = edsDocumentSet
+    totype = edsPBSFunctionalArea
+    totype = edsPBSUnit
+    totype = edsRequirement
+    totype = edsRequirementItems
+    fromcardinality = N
+    tocardinality = N
+relationship type   IMS_CRF2CIEF 
+    fromtype = IMS_ChangeRequest
+    totype = IMS_CIEF
+    fromcardinality = One
+    tocardinality = N
+relationship type   IMS_CRF2ChangeOwner 
+    fromtype = Change Request
+    fromtype = IMS_ChangeRequest
+    totype = Person
+    fromcardinality = N
+    tocardinality = One
+relationship type   IMS_CRF2DIEF 
+    fromtype = Change Request
+    fromtype = IMS_ChangeRequest
+    totype = Change Action
+    totype = IMS_ChangeAction
+    totype = IMS_DIEF
+    fromcardinality = One
+    tocardinality = N
+relationship type   IMS_CRF2ImpactAnalysis 
+    fromtype = Change Request
+    fromtype = IMS_ChangeRequest
+    totype = IMS_ImpactAnalysis
+    fromcardinality = One
+    tocardinality = N
+relationship type   IMS_ChM_CA2RefObject 
+    fromtype = IMS_ChangeAction
+    totype = edsGBSBuilding
+    totype = IMS_PBSFunctionalArea
+    totype = IMS_PBSSystem
+    fromcardinality = N
+    tocardinality = N
+relationship type   IMS_ChangeAction2Evidence 
+    fromtype = Change Action
+    totype = edsDocumentSet
+    totype = edsPBSFunctionalArea
+    fromcardinality = N
+    tocardinality = N
+relationship type   IMS_ChangeAction2IA 
+    fromtype = Change Action
+    totype = IMS_ImpactAnalysis
+    fromcardinality = One
+    tocardinality = N
+relationship type   IMS_ChangeAction2InitialObject 
+    fromtype = IMS_ChangeAction
+    totype = edsDocumentSet
+    totype = edsListDoc
+    totype = edsPBSFunctionalArea
+    fromcardinality = N
+    tocardinality = N
+relationship type   IMS_IEF 
+    fromtype = Change Action
+    totype = IMS_IEF
+    fromcardinality = One
+    tocardinality = N
+relationship type   IMS_ImpactAnalysis2CI 
+    fromtype = IMS_ImpactAnalysis
+    totype = edsPBSFunctionalArea
+    totype = edsPBSUnit
+    totype = edsRequirement
+    totype = edsRequirementItems
+    fromcardinality = N
+    tocardinality = N
+relationship type   IMS_ImpactAnalysis2Doc 
+    fromtype = IMS_ImpactAnalysis
+    totype = edsDocumentSet
+    fromcardinality = N
+    tocardinality = One
+relationship type   IMS_InboxTask2Company 
+    fromtype = Inbox Task
+    totype = Company
+    fromcardinality = N
+    tocardinality = One
+relationship type   IMS_Library2Company 
+    fromtype = IMS_Library
+    totype = Company
+    fromcardinality = One
+    tocardinality = One
+relationship type   IMS_Subclass 
+    fromtype = IMS_Library
+    fromtype = IMS_DisciplineCode
+    fromtype = IMS_Family
+    totype = IMS_DisciplineCode
+    totype = IMS_Family
+    fromcardinality = N
+    tocardinality = N
+relationship type   IMS_ChangeAffectedItem 
+    fromtype = Change Action
+    totype = edsDocumentSet
+    fromcardinality = N
+    tocardinality = One
+relationship type   IMS_IA2BBS 
+    fromtype = IMS_ImpactAnalysis
+    totype = edmReferenceItemBase
+    fromcardinality = N
+    tocardinality = One
+relationship type   edmComment 
+    fromtype = all
+    totype = edmComment
+    fromcardinality = One
+    tocardinality = N
+relationship type   edmCommentAccepted 
+    totype = edmComment
+    fromcardinality = One
+    tocardinality = N
+relationship type   edmCommentReplicated 
+    fromtype = all
+    totype = edmComment
+    fromcardinality = N
+    tocardinality = N
+relationship type   edmCommentClassAttribute 
+    fromtype = edmComment
+    totype = edmAttribute
+    fromcardinality = N
+    tocardinality = N
+relationship type   edmTreeFilter 
+    fromtype = edmClassification
+    totype = edmTreeFilter
+    fromcardinality = N
+    tocardinality = N
+relationship type   edmReferenceItemBase 
+    fromtype = edmReferenceItemBase
+    fromtype = edmReferenceBase
+    totype = edmReferenceItemBase
+    fromcardinality = One
+    tocardinality = N
+relationship type   edmRFC 
+    fromcardinality = N
+    tocardinality = N
+relationship type   edmIntegrationLogObject 
+    fromtype = edmIntegrationLog
+    totype = all
+    fromcardinality = N
+    tocardinality = N
+relationship type   edmIntegration 
+    fromtype = edmIntegration
+    totype = all
+    fromcardinality = One
+    tocardinality = N
+relationship type   edmIntegrationLog 
+    fromtype = edmIntegration
+    totype = edmIntegrationLog
+    fromcardinality = N
+    tocardinality = N
+relationship type   edmDummyPersonParent 
+    fromtype = edmDummyPerson
+    fromtype = Person
+    totype = edmDummyPerson
+    totype = Person
+    fromcardinality = N
+    tocardinality = N
+relationship type   edmTreeParent 
+    fromtype = edmClassification
+    fromtype = edmClass
+    fromtype = edmTree
+    fromtype = edmReferences
+    fromtype = edmReferenceItem
+    fromtype = edmLibrary
+    fromtype = edmLib
+    fromtype = edmLibBase
+    fromtype = edmClassBase
+    fromtype = edmReferenceBase
+    fromtype = edmLibTree
+    totype = edmClassification
+    totype = edmClass
+    totype = edmTree
+    totype = edmReferences
+    totype = edmReferenceItem
+    totype = edmLibrary
+    totype = edmLib
+    totype = edmLibBase
+    totype = edmClassBase
+    totype = edmReferenceBase
+    totype = edmLibTree
+    fromcardinality = N
+    tocardinality = N
+relationship type   edmPersonAccess 
+    fromtype = Person
+    totype = all
+    fromcardinality = N
+    tocardinality = N
+relationship type   edmRPTCopy 
+    fromtype = edmRPT
+    totype = edmRPT
+    fromcardinality = N
+    tocardinality = N
+relationship type   edmRPTSub 
+    fromtype = edmRPT
+    totype = edmRPT
+    totype = edmRPTSub
+    fromcardinality = N
+    tocardinality = N
+relationship type   edmRPTWhereExpression 
+    fromtype = edmRPT
+    fromtype = edmRPTSub
+    totype = edmRPTSelect
+    fromcardinality = N
+    tocardinality = N
+relationship type   edmRPTData 
+    fromtype = edmRPT
+    fromtype = edmRPTSub
+    totype = edmRPTSelect
+    fromcardinality = N
+    tocardinality = N
+relationship type   edmRPTSelect 
+    fromtype = edmRPT
+    totype = edmRPTSelect
+    fromcardinality = N
+    tocardinality = N
+relationship type   edmRPTGroupBy 
+    fromtype = edmRPT
+    fromtype = edmRPTSub
+    totype = edmRPTSelect
+    fromcardinality = N
+    tocardinality = N
+relationship type   edmClass 
+    fromtype = edmClassification
+    fromtype = edmLibrary
+    totype = edsPBSFunctionalArea_PKS
+    totype = edmClassification
+    totype = edmLibraryContent
+    totype = edmClassConfig
+    totype = edmLibrary
+    totype = edsPBSFunctionalArea_EDB
+    totype = IMS_PBSFunctionalArea
+    totype = PnOProject
+    totype = Organization
+    totype = Person
+    fromcardinality = N
+    tocardinality = N
+relationship type   edmAttribute 
+    fromtype = edmAttributeGroup
+    totype = edmAttribute
+    fromcardinality = N
+    tocardinality = N
+relationship type   edmClassParent 
+    fromtype = edmClassification
+    fromtype = edmClass
+    fromtype = edmTree
+    fromtype = edmReferences
+    fromtype = edmReferenceItem
+    fromtype = edmLibrary
+    fromtype = edmLib
+    fromtype = edmLibBase
+    fromtype = edmClassBase
+    totype = edmClassification
+    totype = edmClass
+    totype = edmTree
+    totype = edmReferences
+    totype = edmReferenceItem
+    totype = edmLibrary
+    totype = edmLib
+    totype = edmLibBase
+    totype = edmClassBase
+    fromcardinality = N
+    tocardinality = N
+relationship type   edmAttributeGroup 
+    fromtype = edmClassification
+    fromtype = edmReferenceBase
+    totype = edmAttributeGroup
+    fromcardinality = N
+    tocardinality = N
+relationship type   edmAttributeRange 
+    fromtype = edmAttribute
+    totype = edmAttributeRange
+    fromcardinality = N
+    tocardinality = N
+relationship type   edmAttributeGroupLocal 
+    fromtype = edmClassification
+    fromtype = edmReferenceBase
+    totype = edmAttributeGroup
+    fromcardinality = One
+    tocardinality = One
+relationship type   edmDimensionUnitDefault 
+    fromtype = edmDimension
+    totype = edmDimensionUnit
+    fromcardinality = One
+    tocardinality = One
+relationship type   edmDimensionUnit 
+    fromtype = edmDimension
+    totype = edmDimensionUnit
+    fromcardinality = One
+    tocardinality = N
+relationship type   edmDimension 
+    fromtype = edmAttribute
+    totype = edmDimension
+    fromcardinality = N
+    tocardinality = One
+relationship type   edmAttributeSemantic 
+    fromtype = edmAttribute
+    totype = edmAttribute
+    fromcardinality = N
+    tocardinality = N

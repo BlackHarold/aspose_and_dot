@@ -68,6 +68,18 @@ public class AsposeDataRelationship {
         this.fromcardinality = fromcardinality;
     }
 
+    public String toDotData() {
+        String fromType = fromtype != null ? fromtype.toString() : "{}";
+        fromType = fromType.replace("[", "{").replace("]", "}").replace(", ", ";");
+
+        String toType = totype != null ? totype.toString() : "{}";
+        toType = toType.replace("[", "{").replace("]", "}").replace(", ", ";");
+
+        String result = "\t" + name + "_ [shape=oval, style=filled, color=darkgoldenrod3];\n";
+        result += "\t" + fromType + " -> " + name + "_;\n\t" + name + "_ -> " + toType + ";";
+        return result;
+    }
+
     @Override
     public String toString() {
         return "Relationship{" +
@@ -76,6 +88,8 @@ public class AsposeDataRelationship {
                 ", totype=" + totype +
                 ", tocardinality='" + tocardinality + '\'' +
                 ", fromcardinality='" + fromcardinality + '\'' +
-                '}';
+                '}'
+                +
+                ", dot raw:\n" + toDotData();
     }
 }
